@@ -15,7 +15,9 @@ export class AiBoardComponent implements OnInit {
   gameOver: boolean = false;
   board: Piece[][] = [];
   pinhole_screen: any;
+  Shuru:any;
   board2: Piece[][] = [];
+  board3: Piece[][] = [];
   statusMessage: string = '';
   aiLevelEasy = true;
   canvas: any;
@@ -45,6 +47,11 @@ export class AiBoardComponent implements OnInit {
       [Piece.EMPTY, Piece.EMPTY, Piece.EMPTY],
     ];
     this.board2 = [
+      [Piece.EMPTY, Piece.EMPTY, Piece.EMPTY],
+      [Piece.EMPTY, Piece.EMPTY, Piece.EMPTY],
+      [Piece.EMPTY, Piece.EMPTY, Piece.EMPTY],
+    ];
+    this.board3 = [
       [Piece.EMPTY, Piece.EMPTY, Piece.EMPTY],
       [Piece.EMPTY, Piece.EMPTY, Piece.EMPTY],
       [Piece.EMPTY, Piece.EMPTY, Piece.EMPTY],
